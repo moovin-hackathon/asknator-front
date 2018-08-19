@@ -2,12 +2,11 @@
 <div id="box-chat" class="offset-md-2  col-md-10">
     <header>
         <p> Assunto: <span>Node</span></p>
-        <input type="text" name="usuario" v-model="userId">
+        <input type="text" name="usuario" v-model="userId" v-if="false">
     </header>
-    <div id="box-messages">
+    <div id="box-messages" v-chat-scroll="{always: false, smooth: true}">
     <!-- v-bind:class="{ CurrentUser: message.user == this.applicant }" -->
-        <div class="message" v-for="message in this.messages" :key="message" v-bind:class="{ currentuser: message.user == applicant,  visituser: message.user == requested}">
-            
+        <div class="message" v-for="message in this.messages" :key="message" v-bind:class="{ currentuser: message.user == applicant,  visituser: message.user != applicant}">
             {{message.message}}
         </div>
         <!--div class="message current-user">
@@ -87,10 +86,12 @@ export default {
         }
     },
     created(){
-        this.getMessages()
+        this.getMessages();
+        
     },
   mounted(){
-     
+     let objDiv = document.getElementById("box-messages");
+        objDiv.scrollTop = objDiv.scrollHeight;
   },
   watch: {
       info (newValue, oldValue) {

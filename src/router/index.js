@@ -5,6 +5,7 @@ import layout from "@/components/layout";
 import Ask from '@/components/ask';
 import Home from '@/components/home';
 import Chat from '@/components/chat';
+import Profile from '@/components/profile';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
           path: "chat",
           name: "chat",
           component: Chat
+        },
+        {
+          path: "profile",
+          name: "profile",
+          component: Profile
         }
       ]
     }

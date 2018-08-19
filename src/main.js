@@ -8,6 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import Vue from 'vue';
 import axios from "axios";
+import VueChatScroll from 'vue-chat-scroll'
 import App from './App';
 import router from './router';
 import VueSocketio from "vue-socket.io";
@@ -23,6 +24,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
+  VueChatScroll,
   axios,
   components: { App },
   template: '<App/>',

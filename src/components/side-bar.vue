@@ -7,16 +7,13 @@
         <nav>
             <ul>
                 <li>
-                    <a class="profile">Menu Perfil</a>
+                    <a class="profile" href="profile">Menu Perfil</a>
                 </li>
                 <li>
-                    <a class="answering">Histórico</a>
+                    <a class="answering" href="chat">Respondendo</a>
                 </li>
                 <li>
-                    <a class="answering">Respondendo</a>
-                </li>
-                <li>
-                    <a class="asking">Perguntando</a>
+                    <a class="asking" href="chat">Perguntando</a>
                 </li>
                 <li>
                     <a class="logout">Sair</a>
