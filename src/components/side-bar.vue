@@ -10,10 +10,10 @@
                     <a class="profile" href="profile">Menu Perfil</a>
                 </li>
                 <li>
-                    <a class="answering" href="chat">Respondendo</a>
+                    <a class="answering" href="chat">Responder</a>
                 </li>
                 <li>
-                    <a class="asking" href="chat">Perguntando</a>
+                    <a class="asking" href="ask">Perguntar</a>
                 </li>
                 <li>
                     <a class="logout">Sair</a>
