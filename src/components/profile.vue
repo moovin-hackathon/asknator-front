@@ -6,51 +6,51 @@
                     <p class="col-md-1">
                         Nome
                     </p>
-                    <input type="text" name="nome" class="nome col-md-9"> 
+                    <input type="text" name="nome" class="nome col-md-9">
                 </div>
                 <div class="row">
                     <h2>Quero responder sobre: </h2>
                 </div>
                 <div class="row">
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-hmtl" class="theme"> 
+                        <input type="checkbox" name="theme-hmtl" class="theme">
                         <span>HTML</span>
                     </label>
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-php" class="theme"> 
+                        <input type="checkbox" name="theme-php" class="theme">
                         <span>PHP</span>
                     </label>
-                    <label class="col-md-4"> 
-                        <input type="checkbox" name="theme-c" class="theme"> 
+                    <label class="col-md-4">
+                        <input type="checkbox" name="theme-c" class="theme">
                         <span>C/C++</span>
                     </label>
                 </div>
                 <div class="row">
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-css" class="theme"> 
+                        <input type="checkbox" name="theme-css" class="theme">
                         <span>CSS</span>
                     </label>
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-java" class="theme"> 
+                        <input type="checkbox" name="theme-java" class="theme">
                         <span>JAVA</span>
                     </label>
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-android" class="theme"> 
+                        <input type="checkbox" name="theme-android" class="theme">
                         <span>ANDROID</span>
                     </label>
                 </div>
                 <div class="row">
-                    
+
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-javascript" class="theme"> 
+                        <input type="checkbox" name="theme-javascript" class="theme">
                         <span>JAVASCRIPT</span>
                     </label>
                     <label class="col-md-4">
-                        <input type="checkbox" name="theme-python" class="theme"> 
+                        <input type="checkbox" name="theme-python" class="theme">
                         <span>PYTHON</span>
                     </label>
                     <label>
-                        <input type="checkbox" name="theme-ios" class="theme"> 
+                        <input type="checkbox" name="theme-ios" class="theme">
                         <span>IOS</span>
                     </label>
                 </div>
@@ -92,7 +92,7 @@ export default {
 #box-profile .nome{
     padding: 0px;
     margin-top: 10px;
-    font-size: 12px
+    font-size: 20px
 }
 #box-profile label span{
     width: 130px;
