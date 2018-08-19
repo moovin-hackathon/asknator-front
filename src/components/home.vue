@@ -27,7 +27,7 @@
                 <input type="text" name="email" id="field-senha">
                 <input type="submit" id="submit" value="logar">
               </div>
-              <a href="#" class="link-register">Cadastrar-se</a>
+              <a href="register" class="link-register">Cadastrar-se</a>
             </div>
           </form>
         </section>
@@ -42,7 +42,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      msg: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.',
+      msg: 'Asknator é uma aplicação que busca sanar dúvidas dos usuários de forma rápída e em tempo real através de seu chat. Das questões mais simples sobre linguagem de programação até o funcionamento incorreto no seu código.É permitido apenas duas conversas, para perguntar e outra para responder, assim tornando a conversação mais focada na resolução. O sistema também é constituído de uma pontuação onde os perfis mais relevantes são recompensados conforme seus pontos.',
     };
   },
 };

@@ -3,18 +3,15 @@
     <div class="container-fluid">
         <div class="row">
         <div id="logo" class=" col-md-2">
-            <img src="../assets/logo-dark.png" alt="Asknator"  title="Asknator"/>
+            <img src="../assets/logo-light.png" alt="Asknator"  title="Asknator"/>
         </div>
 
         <div class="area-login col-md-10 text-right" v-if="!logado">
             <!-- usuario nao logado -->
-            <a href="/cadastro">
+            <a href="/register">
             cadastro
             </a>
-            <span>/</span>
-            <a href="/">
-            login
-            </a>
+            
         </div>
 
         <div class="area-login col-md-3 text-center offset-md-7" v-if="logado">
@@ -36,7 +33,7 @@
 export default {
   data: function() {
       return {
-            logado: true,
+            logado: false,
             pontos: '100',
             nomeUsuario: 'manolo'
       }
@@ -52,7 +49,7 @@ header#top.light{
   background-color: #BBDEFB;
 }
 header#top.dark{
-  background-color: #1c1282;
+  background-color: #1A237E;
 }
 header .area-login{
   padding-top: 24px;

@@ -1,7 +1,7 @@
 <template>
     <div class="layout">
-        <main-top v-bind:class="{ dark: !isHome, light: isHome }"/>
-        <side-bar v-if="isHome" />
+        <main-top v-bind:class="{ dark: !isHome, light: isHome }" v-if="!isRegister"/>
+        <side-bar v-if="isHome &&  !isRegister" />
         <router-view />
     </div>
 </template>
@@ -14,6 +14,9 @@
             isHome () {
                 return this.$router.currentRoute.name !== 'home'
             },
+            isRegister () {
+                return this.$router.currentRoute.name === 'register'
+            }
         },
         components: {
             MainTop,
