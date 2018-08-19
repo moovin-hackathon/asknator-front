@@ -2,7 +2,7 @@
 <div id="box-chat" class="offset-md-2  col-md-10">
     <header>
         <p> Assunto: <span>Node</span></p>
-        <input type="text" name="usuario" v-model="userId" v-if="false">
+        <input type="text" name="usuario" v-model="userId" v-if="true">
     </header>
     <div id="box-messages" v-chat-scroll="{always: false, smooth: true}">
     <!-- v-bind:class="{ CurrentUser: message.user == this.applicant }" -->
@@ -18,7 +18,7 @@
         <div class="message visit-user">
             testes
         </div-->
-        
+
     </div>
     <div class="box-send-message">
         <form action="" method="post" v-on:submit.prevent="onSubmit">
@@ -45,12 +45,12 @@ export default {
             messages: null
       }
   },
-    
+
     methods:{
         getMessages: function(){
             //console.log(event)
             axios
-            .get('http://192.168.1.75:8080/conversation/-LKFCCw7nEUHZStAmAR_')
+            .get('http://192.168.1.75:8080/conversation/-LKFC3_6qbqSOJ_EUsPd')
             .then(response => {
                 this.info = response.data.messages;
                 this.applicant = response.data.users.applicant;
@@ -68,10 +68,11 @@ export default {
             var send = {
                 userId: id,
                 message: val,
-                conversationId: "-LKFCCw7nEUHZStAmAR_"
+                conversationId: "-LKFC3_6qbqSOJ_EUsPd"
             }
             this.$socket.emit('chat_message', JSON.stringify(send));
             this.getMessages()
+           this.textSendMessage = ""
         }
     },
     sockets:{
@@ -87,7 +88,7 @@ export default {
     },
     created(){
         this.getMessages();
-        
+
     },
   mounted(){
      let objDiv = document.getElementById("box-messages");
