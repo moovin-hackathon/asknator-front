@@ -26,7 +26,7 @@
                 <input type="password" v-model="password" id="field-senha">
                 <input type="submit" id="submit" value="logar" @click="doLogin">
               </div>
-              <a href="#" class="link-register">Cadastrar-se</a>
+              <a href="register" class="link-register">Cadastrar-se</a>
             </div>
           </section>
         </div>
